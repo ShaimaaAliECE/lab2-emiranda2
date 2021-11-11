@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+/*hello 
+ 
+.board{
+  background: black;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+}
+
+.board > .cell{
+  width: calc(800px / 7);
+  height: (800px / 7);
+  background: white;
+}
+*/
+
+.cell{
+  border: 1px solid black;
+  display: inline-block;
+  padding: 20px;
+  font-family: monospace;
+  cursor: pointer;
+}
