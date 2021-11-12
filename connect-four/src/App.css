@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 }
-/*hello 
+hello 
  
 .board{
   background: black;
@@ -62,7 +62,7 @@
 
 .cell.p1 {
   background-color: yellow;
-  color: white;
+  color: black;
 }
 
 .cell.p2{

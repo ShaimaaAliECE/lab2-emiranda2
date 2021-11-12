@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { dropTile } from './action';
-//import store from './store'
+
 
 class GridCell extends Component{
+    //sends the tile to the column that was clicked
     handleClick(){
         console.log(`Clicked on column ${this.props.x}`)
 
@@ -11,25 +12,30 @@ class GridCell extends Component{
     }
 
     render(){
+        //define variables
         const board = this.props.board;
         const x = this.props.x;
         const y = this.props.y;
 
         let classes = 'cell';
 
+        //if  the cell is red it is p2
 if(board[x][y] != undefined){
     if(board[x][y]=== 'red'){
         classes += ' p2';
+        //otherwise p1 (from app.css)
     }else{
         classes += ' p1';
     }
 }
 
+//change the colour of the cell
         return(
-            <div className={classes} onClick={() => this.handleClick()}>
+            <button className={classes} onClick={() => this.handleClick()}>
                 <p>{this.props.x}, {this.props.y}</p>
-            </div>
+            </button>
         );
+        
     }
 }
 
